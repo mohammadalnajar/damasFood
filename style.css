@@ -22,8 +22,10 @@ html {
 /* -------NAV-------- */
 .nav-bar {
   display: flex;
-
+  /* overflow-x: hidden;
+  overflow-wrap: flex; */
   height: 65px;
+  overflow: visible;
   position: relative;
   top: 0;
   left: 0;
@@ -134,9 +136,11 @@ html {
   width: 150px;
   border-radius: 50%;
   position: absolute;
-  top: 15px;
-  right: 10px;
-  transform: translateX(75px) translateY(-75px);
+  top: 0px;
+  right: 0px;
+  transform: rotate(180deg);
+  /* overflow-x: hidden; */
+  /* transform: translateX(75px) translateY(-75px); */
   transition: transform 0.5s ease;
   /* transform: rotate(180deg); */
 }
@@ -148,6 +152,7 @@ html {
   position: absolute;
   font-size: 1.5rem;
   border: solid 2px white;
+  transition: opacity 0.2s ease;
   /* color: white; */
   border-radius: 50%;
   width: 40px;
@@ -160,6 +165,7 @@ html {
 .nav_btn_close {
   top: 25px;
   left: 90px;
+  opacity: 0;
 }
 .nav_btn_open:focus,
 .nav_btn_close {
@@ -194,6 +200,7 @@ html {
   background-size: cover;
   height: 600px;
   position: relative;
+  /* z-index: 1000; */
 }
 .head::before {
   content: "";
@@ -403,9 +410,13 @@ html {
   flex: 1 1 30%;
   width: 30%;
   overflow: hidden;
+  /* position: relative; */
   background-color: rgb(0, 0, 0);
   /* position: relative; */
   /* z-index: 2; */
+}
+.meal p {
+  position: relative;
 }
 .meal:nth-of-type(1) {
   border-radius: 10px 0 0 0;
@@ -461,7 +472,7 @@ html {
   content: "";
   height: 4px;
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   background-color: green;
@@ -578,7 +589,8 @@ html {
   background-color: rgb(90, 219, 90);
   padding: 30px;
   width: 50%;
-  box-shadow: 10px 10px 20px 20px rgba(0, 0, 0, 0.212);
+  margin-top: 20px;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.123);
   border-radius: 10px;
 }
 .form_item {

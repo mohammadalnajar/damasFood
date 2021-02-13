@@ -64,6 +64,9 @@
     flex-direction: column;
     height: auto;
   }
+  .nav-bar_head {
+    align-self: flex-start;
+  }
   .nav-bar.fixed {
     height: auto;
   }
@@ -135,7 +138,7 @@
     border-radius: 0 0 10px 10px;
   }
 }
-@media (min-width: 450px) and (max-width: 1200px) {
+@media (min-width: 450px) and (max-width: 900px) {
   p.first-para-450 {
     transform: translateY(-40px);
     opacity: 1;
