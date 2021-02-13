@@ -23,7 +23,7 @@ html {
 .nav-bar {
   display: flex;
 
-  height: 4rem;
+  height: 65px;
   position: relative;
   top: 0;
   left: 0;
@@ -31,7 +31,8 @@ html {
   background-color: rgb(90, 219, 90);
   transition: all 0.3s ease;
   width: 100%;
-  /* overflow: hidden; */
+  /* overflow-x:; */
+
   /* margin-bottom: 30px; */
   z-index: 1000;
 }

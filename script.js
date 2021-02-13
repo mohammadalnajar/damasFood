@@ -17,7 +17,9 @@ var typed5 = new Typed(".type1", {
 
     
   });
-
+  
+// *****************************************
+// ---------------Jqeury-----------
 
 //   ---------NAVBAR-FIXED---`
 $(document).ready(function(){
@@ -92,6 +94,9 @@ $(document).ready(function(){
 
 })
 
+// ********************************************************************************************
+// ---------SELECTORS-------------
+
 
 const services=document.querySelectorAll('.service');
 const p=document.querySelectorAll('.service p');
@@ -119,31 +124,10 @@ const btnClose=document.querySelector('.nav_btn_close');
 const navUl=document.querySelector('.nav-bar ul');
 
 
+// ********************************************************************************
 
-// services.forEach(service=>{
-// });
-    // services.addEventListener('onmouseover', ()=>{
-    //     console.log("hello")
-    // })
-// services.forEach(service=>{
-//     service.onmouseover=p[1].style.color='red';
-//     service.onmouseout=p[1].style.color='blue';
-// })
+// ---------SERVICES-SECTION-----------------
 
-    // services[2].onmouseover=p[2].style.color='red';
-    // services[1].onmouseout=p[1].style.color='blue';
-    
-    // ****************************
-
-// for (let i=0; i<services.length;i++){
-//     services[i].addEventListener('mouseover', ()=>{
-//         p[i].style.color='red';
-//     })
-//     services[i].addEventListener('mouseout', ()=>{
-//         p[i].style.color='white';
-//     })
-
-// }
 
 services.forEach((service, idx)=>{
     service.addEventListener('mouseover', ()=>{
@@ -165,18 +149,6 @@ services.forEach((service, idx)=>{
     })
 })
 
-navList2.addEventListener('mouseover', ()=>{
-    recept.classList.add('new2');
-})
-navList2.addEventListener('mouseout', ()=>{
-    recept.classList.remove('new2');
-})
-recept.addEventListener('mouseover', ()=>{
-    recept.classList.add('new2');
-})
-recept.addEventListener('mouseout', ()=>{
-    recept.classList.remove('new2');
-})
 
 
 // **************************************
@@ -190,6 +162,18 @@ btnClose.addEventListener('click', ()=>{
     navButtons.style.transform='translateX(75px) translateY(-75px)';
     navUl.classList.remove('flex-display')
 })
+navList2.addEventListener('mouseover', ()=>{
+    recept.classList.add('new2');
+})
+navList2.addEventListener('mouseout', ()=>{
+    recept.classList.remove('new2');
+})
+recept.addEventListener('mouseover', ()=>{
+    recept.classList.add('new2');
+})
+recept.addEventListener('mouseout', ()=>{
+    recept.classList.remove('new2');
+})
 
 // **************************************************
 // ------MEALS-SECTION------------
@@ -198,30 +182,18 @@ btnClose.addEventListener('click', ()=>{
 mealsF9.forEach((meal,idx)=>{
     meal.addEventListener('mouseover',()=>{
         paraF9[idx].classList.add('first-para-900');
-        // paraR1[idx].style.transform='translateY(-40px)';
-        // paraR1[idx].style.transition='transform 0.3s ease, opacity 1.5s ease'; 
-        // paraR1[idx].style.opacity='1';
     })
     meal.addEventListener('mouseout',()=>{
         paraF9[idx].classList.remove('first-para-900');
-        // paraR1[idx].style.transform='translateY(-5px)';
-        // paraR1[idx].style.opacity='0';
-        // paraR1[idx].style.transition='transform 0.4s ease, opacity 0.3s ease';
-    })
+       })
 })
 mealsS9.forEach((meal,idx)=>{
     meal.addEventListener('mouseover',()=>{
         paraS9[idx].classList.add('second-para-900');
-        // paraR2[idx].style.transform='translateY(40px)';
-        // paraR2[idx].style.opacity='1';
-        // paraR2[idx].style.transition='transform 0.3s ease, opacity 1.5s ease'; 
-    })
+       })
     meal.addEventListener('mouseout',()=>{
         paraS9[idx].classList.remove('second-para-900');
-        // paraR2[idx].style.transform='translateY(-5px)';
-        // paraR2[idx].style.opacity='0';
-        // paraR2[idx].style.transition='transform 0.4s ease, opacity 0.3s ease';
-    })
+        })
 })
 
 // ----MinWidth-450-------
@@ -243,10 +215,7 @@ mealsS45.forEach((meal,idx)=>{
         meal.addEventListener('mouseout',()=>{
             paraS45[idx].classList.remove('second-para-450-2');})
     }
-    // meal.addEventListener('mouseover',()=>{
-    //     paraS45[idx].classList.add('second-para-450');})
-    // meal.addEventListener('mouseout',()=>{
-    //     paraS45[idx].classList.remove('second-para-450');})
+    
 })
 mealsTh45.forEach((meal,idx)=>{
     meal.addEventListener('mouseover',()=>{
@@ -259,17 +228,3 @@ mealsTh45.forEach((meal,idx)=>{
 
 // ****************************************
 
-// const x=window.matchMedia("(max-width:800px)")
-// function media(){
-//     if (x.matches){
-//         nav.
-//     }
-// }
-
-inputs.forEach((input, idx)=>{
-    input.addEventListener('input',()=>{
-        if (input.value.length>0){
-            labels[idx].classList.add('up');
-        } else {labels[idx].classList.remove('up')}
-    } )
-})
