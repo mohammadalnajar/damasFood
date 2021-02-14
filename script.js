@@ -72,18 +72,18 @@ btnClose.addEventListener('click', ()=>{
     navButtons.style.transform='rotate(180deg)';
     navUl.classList.remove('flex-display')
 })
-navList2.addEventListener('mouseover', ()=>{
-    recept.classList.add('new2');
-})
-navList2.addEventListener('mouseout', ()=>{
-    recept.classList.remove('new2');
-})
-recept.addEventListener('mouseover', ()=>{
-    recept.classList.add('new2');
-})
-recept.addEventListener('mouseout', ()=>{
-    recept.classList.remove('new2');
-})
+// navList2.addEventListener('mouseover', ()=>{
+//     recept.classList.add('new2');
+// })
+// navList2.addEventListener('mouseout', ()=>{
+//     recept.classList.remove('new2');
+// })
+// recept.addEventListener('mouseover', ()=>{
+//     recept.classList.add('new2');
+// })
+// recept.addEventListener('mouseout', ()=>{
+//     recept.classList.remove('new2');
+// })
 
 // **************************************************
 // ------MEALS-SECTION------------

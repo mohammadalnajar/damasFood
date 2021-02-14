@@ -105,7 +105,7 @@ html {
   height: 4rem;
 }
 .nav_list_item a {
-  color: rgb(160, 105, 2);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,9 +227,9 @@ html {
 .btn {
   padding: 10px 20px;
   background-color: var(--green);
-  color: white;
+  color: black;
   font-family: "Roboto Mono", monospace;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 2px;
   border: 0;
   border-radius: 10px;
@@ -242,6 +242,7 @@ html {
 .btn:hover {
   transform: scale(1.2);
   background-color: green;
+  color: white;
 }
 .btn:focus {
   outline: none;
