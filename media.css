@@ -62,7 +62,8 @@
   .nav-bar {
     align-items: center;
     flex-direction: column;
-    height: auto;
+    /* height: auto; */
+    max-height: 400px;
   }
   .nav-bar_head {
     align-self: flex-start;
