@@ -85,12 +85,14 @@ html {
 .new {
   text-align: center;
   position: absolute;
-  /* top: 0; */
+  top: 0;
+  left: 0;
   background-color: var(--orange);
   /* z-index: 1; */
   padding: 15px 04px;
   font-weight: 900;
   transform-origin: center;
+  /* transform: ; */
   /* transform: translateY(72px); */
   color: white;
   z-index: -1;
@@ -192,6 +194,37 @@ html {
   bottom: 0;
   left: 50%;
 }
+/* ---------RECIPE_PAGE-------------- */
+
+.recipes_section {
+  background-color: var(--light_green);
+  display: flex;
+  justify-content: center;
+}
+.recipes_container {
+  padding: 20px;
+  width: 80%;
+  margin: 80px 0px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.349);
+}
+.recipes_container table tr:nth-of-type(1) {
+  background-color: green;
+  color: white;
+  font-family: var(--surfer);
+}
+.recipes_container table tr:nth-of-type(1) th {
+  padding: 10px;
+}
+.recipes_container table tr td {
+  font-family: var(--Roboto);
+  padding: 20px;
+  font-weight: 700;
+}
+.recipes_container table tr td {
+  border: 1px solid rgba(0, 0, 0, 0.096);
+}
+
 /* -----HEAD----- */
 
 .head {
@@ -581,16 +614,34 @@ html {
   font-weight: 600;
   background-color: var(--light_green);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 600px;
   padding-bottom: 50px;
 }
+.form_section_head h1 {
+  font-family: var(--surfer);
+  position: relative;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.form_section_head h1::after {
+  content: "";
+  height: 4px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: green;
+  width: 80px;
+  border-radius: 5px;
+}
 .form {
   background-color: rgb(90, 219, 90);
   padding: 30px;
   width: 50%;
-  margin-top: 20px;
+  margin-top: 40px;
   box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.123);
   border-radius: 10px;
 }
@@ -763,7 +814,13 @@ html {
 .footer_social_icons ul li:nth-of-type(4):hover {
   color: #bb0000;
 }
-
+.footer_rights {
+  clear: both;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  vertical-align: bottom;
+}
 /* ? These are classes which will be used in js  */
 .up {
   transform: translateY(-90px);
