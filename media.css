@@ -62,7 +62,7 @@
   .nav-bar {
     align-items: center;
     flex-direction: column;
-    /* height: auto; */
+    height: auto;
     max-height: 400px;
   }
   .nav-bar_head {
@@ -102,6 +102,9 @@
   .nav_list.flex-display {
     display: flex;
   }
+  .new2 {
+    transform: translateX(-110px);
+  }
 }
 @media (max-width: 550px) {
   .footer_list ul {
@@ -117,6 +120,9 @@
   .footer_social_icons ul {
     clear: none;
     margin-right: 80px;
+  }
+  .recipes_container {
+    font-size: 8px;
   }
 }
 @media (max-width: 450px) {
@@ -146,7 +152,7 @@
     transition: transform 0.3s ease, opacity 1.5s ease;
   }
   p.second-para-450-1 {
-    transform: translateX(-100px) rotate(-90deg);
+    transform: translateX(-140px) rotate(-90deg);
     opacity: 1;
     transition: transform 0.3s ease, opacity 1.5s ease;
   }
