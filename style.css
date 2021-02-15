@@ -890,9 +890,27 @@ html {
 .test p span:nth-of-type(1) {
   color: red;
   /* display: none; */
+  transition: -webkit-animation 0.3s ease;
   transition: animation 0.3s ease;
+  transition: animation 0.3s ease, -webkit-animation 0.3s ease;
   position: absolute;
+  -webkit-animation: test1 2s ease 2s infinite normal forwards;
   animation: test1 2s ease 2s infinite normal forwards;
+}
+@-webkit-keyframes test1 {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+    /* color: blue; */
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-20px);
+    /* color: chocolate; */
+  }
 }
 @keyframes test1 {
   0% {
@@ -913,7 +931,23 @@ html {
 .test p span:nth-of-type(2) {
   color: blueviolet;
   position: absolute;
+  -webkit-animation: test2 2s ease 2s infinite normal forwards;
   animation: test2 2s ease 2s infinite normal forwards;
+}
+@-webkit-keyframes test2 {
+  0% {
+    opacity: 0;
+    transform: translateX(220px);
+    /* color: blue; */
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(10px);
+    /* color: chocolate; */
+  }
 }
 @keyframes test2 {
   0% {
@@ -933,7 +967,23 @@ html {
 .test p span:nth-of-type(3) {
   color: rgb(255, 0, 221);
   position: absolute;
+  -webkit-animation: test3 2s ease 3s infinite normal forwards;
   animation: test3 2s ease 3s infinite normal forwards;
+}
+@-webkit-keyframes test3 {
+  0% {
+    opacity: 0;
+    transform: translateX(240px);
+    /* color: blue; */
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(30px);
+    /* color: chocolate; */
+  }
 }
 @keyframes test3 {
   0% {
@@ -953,6 +1003,7 @@ html {
 .test p span:nth-of-type(4) {
   color: green;
   position: absolute;
+  -webkit-animation: test4 3s ease 2s infinite normal forwards;
   animation: test4 3s ease 2s infinite normal forwards;
 }
 @keyframes test2 {
@@ -973,6 +1024,7 @@ html {
 .test p span:nth-of-type(5) {
   color: orange;
   position: absolute;
+  -webkit-animation: test5 3s ease 2s infinite normal forwards;
   animation: test5 3s ease 2s infinite normal forwards;
 }
 @keyframes test2 {
