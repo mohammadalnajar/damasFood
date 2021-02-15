@@ -13,10 +13,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* body,
+body,
 html {
   width: 100vw;
-} */
+  overflow-x: hidden;
+}
 /* ---------********THIS IS THE HEADER********--------- */
 
 /* -------NAV-------- */
@@ -1035,6 +1036,10 @@ html {
   }
   50% {
     transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
   }
   100% {
     opacity: 1;
